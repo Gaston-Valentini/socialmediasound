@@ -1,0 +1,114 @@
+.about{
+    padding: 100px 60px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--background);
+}
+
+.aboutTitles{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 50px;
+    text-shadow: 2px 2px 5px rgb(0, 0, 0);
+}
+
+.aboutTitlesTitle{
+    font-size: 20px;
+    font-weight: 100;
+    text-align: center;
+    color: var(--red);
+    text-shadow: 2px 2px 5px rgb(0, 0, 0);
+}
+
+.aboutTitlesSubtitle{
+    font-size: 30px;
+    font-weight: 800;
+    text-align: center;
+    color: rgb(255, 255, 255);
+}
+
+.aboutSlider{
+    max-width: 1000px;
+    box-shadow: 3px 3px 7px rgb(0, 0, 0);
+}
+
+.aboutSliderImage{
+    height: 500px;
+}
+
+.aboutSliderImage img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+.aboutSliderData{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 40px;
+    background-color: rgb(255, 255, 255);
+}
+
+.aboutSliderDataTitle{
+    font-size: 30px;
+    font-weight: 800;
+    text-align: center;
+}
+
+.aboutSliderDataSubtitle{
+    margin: 20px 0;
+    font-size: 15px;
+    font-weight: 100;
+    text-align: center;
+}
+
+.aboutSliderDataButton{
+    font-size: 20px;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 50px;
+    background-color: var(--red);
+}
+.aboutSliderDataButton:hover{
+    background-color: rgb(0, 0, 0);
+    color: rgb(255, 255, 255);
+    transition: 0.3s;
+}
+
+.aboutNavbar{
+    margin-top: 20px;
+}
+
+.aboutNavbarButton{
+    margin: 0 5px;
+    font-size: 30px;
+    color: var(--red);
+    border-radius: 50px;
+    box-shadow: 3px 3px 7px rgb(0, 0, 0);
+}
+.aboutNavbarButton:hover{
+    cursor: pointer;
+    background-color: rgb(255, 255, 255);
+    color: rgb(0, 0, 0);
+    transition: 0.3s;
+}
+
+@media(max-width: 550px){
+    .about{
+        padding: 100px 20px;
+    }
+    .aboutSliderImage{
+        height: 300px;
+    }    
+    .aboutSliderData{
+        padding: 20px;
+    }
+    .aboutSliderDataTitle{
+        font-size: 20px;
+    }
+}

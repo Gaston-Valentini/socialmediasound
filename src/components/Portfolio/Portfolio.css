@@ -1,0 +1,116 @@
+.portfolio{
+    padding: 100px 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--blue);
+}
+
+.portfolioTitles{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 50px;
+}
+
+.portfolioTitlesTitle{
+    font-size: 20px;
+    font-weight: 400;
+    text-align: center;
+    color: rgb(0,0,0);
+}
+
+.portfolioTitlesSubtitle{
+    font-size: 30px;
+    font-weight: 800;
+    text-align: center;
+    color: rgb(255, 255, 255);
+    text-shadow: 2px 2px 5px rgb(0, 0, 0)
+}
+
+.portfolioContent{
+    margin-top: 40px;
+    width: 100%;
+    height: 400px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: var(--background);
+}
+
+.portfolioContent img{
+    height: 500px;
+}
+
+.portfolioContentInfo{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 40px;
+    max-width: 1000px;
+}
+
+.portfolioContentInfoTitlesTitle{
+    margin-bottom: 10px;
+    font-size: 20px;
+    font-weight: 800;
+    color: var(--red);
+}
+
+.portfolioContentInfoTitlesSubtitle{
+    font-size: 15px;
+    font-weight: 100;
+    color: rgb(255, 255, 255);
+}
+
+.portfolioContentInfoAudiosSection{
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    margin: 10px 0;
+}
+
+.portfolioContentInfoAudiosSectionTitlesTitle{
+    font-size: 20px;
+    font-weight: 800;
+    color: rgb(255, 255, 255);
+}
+
+.portfolioContentInfoAudiosSectionTitlesSubtitle{
+    font-size: 15px;
+    font-weight: 100;
+    color: var(--red);
+}
+
+.portfolioContentInfoAudiosSectionAudio::-webkit-media-controls-play-button{
+    background-color: var(--red);
+    border-radius: 50%;
+}
+
+@media(max-width: 1300px){
+    .portfolioTitlesSubtitle{
+        padding: 0 20px;
+    }
+    .portfolioContent{
+        height: auto;
+        justify-content: center;
+    }
+    .portfolioContent img{
+        display: none;
+    }
+    .portfolioContentInfo{
+        padding: 20px;
+        text-align: center;
+    }
+}
+
+@media(max-width: 480px){
+    .portfolioContentInfoAudiosSection{
+        flex-direction: column;
+        gap: 10px;
+    }
+    .portfolioContentInfoAudiosSectionAudio{
+        width: 200px;
+    }
+}
